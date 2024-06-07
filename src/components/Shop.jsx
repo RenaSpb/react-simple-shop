@@ -84,6 +84,7 @@ function Shop() {
     }
 
     useEffect(function getGoods() {
+        console.log('API Key:', process.env.REACT_APP_API_KEY);
         fetch(API_URL, {
             headers: {
                 Authorization: API_KEY,
