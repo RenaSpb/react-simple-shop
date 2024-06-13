@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
-
-function Alert(props) {
-    const { name = '', closeAlert } = props;
+import { useEffect, useContext } from 'react';
+import {ShopContext} from '../context'
+function Alert() {
+    const { alertName: displayName = '', closeAlert } = useContext(ShopContext);
 
     useEffect(() => {
         const timerId = setTimeout(closeAlert, 3000);
@@ -9,11 +9,11 @@ function Alert(props) {
             clearTimeout(timerId);
         };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [name]);
+    }, [displayName]);
 
     return (
         <div id="toast-container">
-            <div className="toast">{name} added to basket</div>
+            <div className="toast">{displayName} added to basket</div>
         </div>
     );
 }
