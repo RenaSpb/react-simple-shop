@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .btn-rounded {
-  border-radius: 5px; /* Adjust the value to get the desired roundness */
+  border-radius: 5px;
 }
 nav {
   padding: 0 1rem;
@@ -90,7 +90,7 @@ nav {
   transform: translate(-50%, -50%);
   width: 30%;
   max-width: 90%;
-  box-shadow: inset -1px 3px 8px 5px #676d72, 2px 5px 16px #5f5f63, 5px 5px 15px 5px rgba(164, 160, 160, 0);
+  box-shadow: inset -1px 3px 8px 5px #676d72, 2px 5px 16px #6c6c71, 5px 5px 15px 5px rgba(171, 40, 40, 0);
   animation: show 500ms ease-in-out;
   border-radius: 10px;
   user-select: none;
