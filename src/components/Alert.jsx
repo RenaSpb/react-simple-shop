@@ -8,7 +8,7 @@ function Alert() {
         return () => {
             clearTimeout(timerId);
         };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line
     }, [displayName]);
 
     return (
