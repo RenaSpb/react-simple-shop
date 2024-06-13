@@ -20,7 +20,7 @@ function Shop() {
             .then(data => {
                 setGoods(data.shop);
             })
-        // eslint-disable-next-linei
+        // eslint-disable-next-line
     }, []);
 
     return (
